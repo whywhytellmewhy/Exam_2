@@ -35,8 +35,8 @@ void stop_gesture(Arguments *in, Reply *out);
 void stop_tilt(Arguments *in, Reply *out);
 void receive_confirmed_degree(Arguments *in, Reply *out);
 
-RPCFunction rpcgesture(&gesture, "ACCELERATOR");
-RPCFunction rpctilt(&tilt, "TILT");
+RPCFunction rpcgesture(&gesture, "GESTURE");
+RPCFunction rpctilt(&tilt, "ACCELERATOR");
 RPCFunction rpcstopgesture(&stop_gesture, "STOPGESTURE");
 RPCFunction rpcstoptilt(&stop_tilt, "STOPTILT");
 RPCFunction rpcreceive_confirmed_degree(&receive_confirmed_degree, "RECEIVECONFIRMEDDEGREE");
